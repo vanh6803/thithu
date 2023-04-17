@@ -1,0 +1,31 @@
+<%- include('./inc/header') %>
+
+    <div class="d-flex justify-content-center">
+        <h1>thêm</h1>
+    </div>
+    <div class="container">
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label  class="form-label">mã nv</label>
+                <input type="text" name="id" class="form-control"  value="<%= obj.id %>">
+            </div>
+
+            <div class="mb-3">
+                <label  class="form-label">name</label>
+                <input type="text" name="name" class="form-control" value="<%= obj.name %>" >
+            </div>
+
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Default file input example</label>
+                <input class="form-control" name="image" type="file" id="formFile">
+            </div>
+
+            <div class="mb-3">
+                <label  class="form-label">điểm trung bình</label>
+                <input type="number" name="point" class="form-control" value="<%= obj.point %>">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <%- include('./inc/footer') %>
